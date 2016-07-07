@@ -43,6 +43,7 @@ desc 'populate the test database with data'
 task 'db:populate' do
   AppConfig.establish_connection
   StudentsImporter.new.import
+  TeachersImporter.new.import
   # Invoke your TeachersImporter here
 end
 
