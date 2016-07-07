@@ -6,8 +6,8 @@ class CreateTeachers < ActiveRecord::Migration
     create_table :teachers do |t|
       # column definitions go here
       # Use the AR migration guide for syntax reference
-      t.string :first_name, :null => false
-      t.string :last_name, :null => false
+      t.string :first_name
+      t.string :last_name
       t.string :email
       t.string :phone
       t.datetime :created_at
